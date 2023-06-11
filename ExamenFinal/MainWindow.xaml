@@ -1,0 +1,21 @@
+﻿<Window x:Class="ExamenFinal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamenFinal"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="33,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"><Run Language="es-mx" Text="Carnet"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="33,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"><Run Language="es-mx" Text="Nombre"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="37" Margin="33,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"><Run Language="es-mx" Text="Telefono"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="37" Margin="33,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"><Run Language="es-mx" Text="Grado"/></TextBlock>
+        <TextBox x:Name="txtCarnet" HorizontalAlignment="Left" Height="28" Margin="246,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="37" Margin="246,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Height="37" Margin="246,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="txtGrado" HorizontalAlignment="Left" Height="37" Margin="246,239,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="205"/>
+        <Button Content="GUARDAR" HorizontalAlignment="Left" Height="61" Margin="118,323,0,0" VerticalAlignment="Top" Width="187" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

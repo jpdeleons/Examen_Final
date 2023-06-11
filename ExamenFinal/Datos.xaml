@@ -1,0 +1,31 @@
+﻿<Window x:Class="ExamenFinal.Datos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamenFinal"
+        mc:Ignorable="d"
+        Title="Datos" Height="450" Width="800">
+    <StackPanel>
+        <DataGrid Name="grilla" x:FieldModifier="public" AutoGenerateColumns="False" ColumnWidth="*">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Carnet" Binding="{Binding Carnet}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Telefono" Binding="{Binding Telefono}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Gradeo" Binding="{Binding Grado}"></DataGridTextColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.Header>
+                        <TextBlock Text="Administrar"></TextBlock>
+                    </DataGridTemplateColumn.Header>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <Button Content="Eliminar" Name="btneliminar" Click="deleteBtn_Click"></Button>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</Window>
